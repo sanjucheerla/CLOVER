@@ -1,0 +1,1409 @@
+Initial length of data: 1790
+Output length of data: 508
+deepseek_E_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 271
+Length of Should data: 3
+Length of CTD data: 609
+Overall Precision: 0.5334645669291339
+Overall Recall: 0.44499178981937604
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 388
+  Invalid gene symbols (not in manual):   120
+  Rows with no gene symbol:               0
+  Total df rows:                          508
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 491
+  Invalid chemical IDs (not in manual):   17
+  Rows with no chemical ID:               0
+  Total df rows:                          508
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 339
+  Exact relationship match:                               271
+  Wrong relationship (any mismatch):                      68
+    ├─ Wrong prefix only  (correct type, wrong direction): 54
+    ├─ Wrong type only    (correct prefix, wrong type):    5
+    ├─ Wrong prefix AND type:                              9
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 340
+  Matched rows: 129
+
+SUPPLEMENT:
+  DF rows in section: 125
+  Matched rows: 124
+
+FIG:
+  DF rows in section: 0
+  Matched rows: 0
+
+TEXT:
+  DF rows in section: 43
+  Matched rows: 18
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      340            129   0.379412 0.211823
+SUPPLEMENT      125            124   0.992000 0.203612
+       FIG        0              0   0.000000 0.000000
+      TEXT       43             18   0.418605 0.029557
+------------------------------------------------------------
+
+Unmatched manual rows: 358
+Unmatched df rows: 237
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+TABLE    60
+TEXT      2
+
+⚠️  62 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+decrease expression               31
+increase expression               22
+affect response to substance       6
+decrease response to substance     2
+affect expression                  1
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+affect expression         51
+increase expression        5
+decrease expression        4
+increase localization      1
+affect phosphorylation     1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual   relationship_norm_df  count
+           decrease expression      affect expression     31
+           increase expression      affect expression     20
+  affect response to substance    increase expression      4
+  affect response to substance    decrease expression      2
+decrease response to substance    decrease expression      2
+             affect expression    increase expression      1
+           increase expression affect phosphorylation      1
+           increase expression  increase localization      1
+============================================================
+
+
+Initial length of data: 2781
+Output length of data: 1012
+gpt_E_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 422
+Length of Should data: 7
+Length of CTD data: 609
+Overall Precision: 0.41699604743083
+Overall Recall: 0.6929392446633826
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 665
+  Invalid gene symbols (not in manual):   347
+  Rows with no gene symbol:               0
+  Total df rows:                          1012
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 842
+  Invalid chemical IDs (not in manual):   170
+  Rows with no chemical ID:               0
+  Total df rows:                          1012
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 477
+  Exact relationship match:                               422
+  Wrong relationship (any mismatch):                      55
+    ├─ Wrong prefix only  (correct type, wrong direction): 33
+    ├─ Wrong type only    (correct prefix, wrong type):    14
+    ├─ Wrong prefix AND type:                              8
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 660
+  Matched rows: 201
+
+SUPPLEMENT:
+  DF rows in section: 125
+  Matched rows: 124
+
+FIG:
+  DF rows in section: 188
+  Matched rows: 89
+
+TEXT:
+  DF rows in section: 39
+  Matched rows: 8
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      660            201   0.304545 0.330049
+SUPPLEMENT      125            124   0.992000 0.203612
+       FIG      188             89   0.473404 0.146141
+      TEXT       39              8   0.205128 0.013136
+------------------------------------------------------------
+
+Unmatched manual rows: 207
+Unmatched df rows: 590
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+FIG      21
+TABLE    10
+TEXT      2
+
+⚠️  33 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+increase expression               14
+affect response to substance       6
+decrease expression                4
+affect expression                  3
+decrease cleavage                  3
+decrease response to substance     2
+decrease activity                  1
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+decrease expression    21
+increase expression    11
+increase secretion      1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual relationship_norm_df  count
+           increase expression  decrease expression     13
+  affect response to substance  increase expression      4
+           decrease expression  increase expression      4
+             affect expression  increase expression      3
+             decrease cleavage  decrease expression      3
+  affect response to substance  decrease expression      2
+decrease response to substance  decrease expression      2
+             decrease activity  decrease expression      1
+           increase expression   increase secretion      1
+============================================================
+
+
+Initial length of data: 2207
+Output length of data: 659
+claude_E_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 437
+Length of Should data: 5
+Length of CTD data: 609
+Overall Precision: 0.6631259484066768
+Overall Recall: 0.7175697865353038
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 552
+  Invalid gene symbols (not in manual):   107
+  Rows with no gene symbol:               0
+  Total df rows:                          659
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 618
+  Invalid chemical IDs (not in manual):   41
+  Rows with no chemical ID:               0
+  Total df rows:                          659
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 473
+  Exact relationship match:                               437
+  Wrong relationship (any mismatch):                      36
+    ├─ Wrong prefix only  (correct type, wrong direction): 17
+    ├─ Wrong type only    (correct prefix, wrong type):    10
+    ├─ Wrong prefix AND type:                              9
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 296
+  Matched rows: 194
+
+SUPPLEMENT:
+  DF rows in section: 125
+  Matched rows: 124
+
+FIG:
+  DF rows in section: 205
+  Matched rows: 108
+
+TEXT:
+  DF rows in section: 33
+  Matched rows: 11
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      296            194   0.655405 0.318555
+SUPPLEMENT      125            124   0.992000 0.203612
+       FIG      205            108   0.526829 0.177340
+      TEXT       33             11   0.333333 0.018062
+------------------------------------------------------------
+
+Unmatched manual rows: 192
+Unmatched df rows: 222
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+FIG      11
+TABLE     9
+TEXT      5
+
+⚠️  25 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+affect response to substance      7
+increase expression               5
+affect expression                 4
+decrease expression               3
+decrease cleavage                 3
+decrease response to substance    2
+increase phosphorylation          1
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+decrease expression              10
+increase expression               9
+decrease metabolic processing     3
+increase secretion                1
+increase activity                 1
+decrease activity                 1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual          relationship_norm_df  count
+  affect response to substance           increase expression      4
+  affect response to substance           decrease expression      3
+             decrease cleavage decrease metabolic processing      3
+           decrease expression           increase expression      3
+           increase expression           decrease expression      3
+             affect expression           decrease expression      2
+             affect expression           increase expression      2
+decrease response to substance           decrease expression      2
+           increase expression             increase activity      1
+           increase expression            increase secretion      1
+      increase phosphorylation             decrease activity      1
+============================================================
+
+
+Initial length of data: 2066
+Output length of data: 764
+gpt4o_E_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 336
+Length of Should data: 5
+Length of CTD data: 609
+Overall Precision: 0.4397905759162304
+Overall Recall: 0.5517241379310345
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 514
+  Invalid gene symbols (not in manual):   250
+  Rows with no gene symbol:               0
+  Total df rows:                          764
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 650
+  Invalid chemical IDs (not in manual):   114
+  Rows with no chemical ID:               0
+  Total df rows:                          764
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 368
+  Exact relationship match:                               336
+  Wrong relationship (any mismatch):                      32
+    ├─ Wrong prefix only  (correct type, wrong direction): 20
+    ├─ Wrong type only    (correct prefix, wrong type):    5
+    ├─ Wrong prefix AND type:                              7
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 520
+  Matched rows: 163
+
+SUPPLEMENT:
+  DF rows in section: 125
+  Matched rows: 124
+
+FIG:
+  DF rows in section: 90
+  Matched rows: 38
+
+TEXT:
+  DF rows in section: 29
+  Matched rows: 11
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      520            163   0.313462 0.267652
+SUPPLEMENT      125            124   0.992000 0.203612
+       FIG       90             38   0.422222 0.062397
+      TEXT       29             11   0.379310 0.018062
+------------------------------------------------------------
+
+Unmatched manual rows: 293
+Unmatched df rows: 428
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+FIG      11
+TABLE    10
+TEXT      1
+
+⚠️  22 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+affect response to substance      6
+decrease expression               5
+increase expression               4
+affect expression                 4
+decrease response to substance    2
+decrease activity                 1
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+increase expression    10
+decrease expression     9
+affect expression       2
+increase activity       1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual relationship_norm_df  count
+  affect response to substance  increase expression      4
+             affect expression  increase expression      3
+           decrease expression  increase expression      3
+           increase expression  decrease expression      3
+  affect response to substance  decrease expression      2
+           decrease expression    affect expression      2
+decrease response to substance  decrease expression      2
+             affect expression  decrease expression      1
+             decrease activity  decrease expression      1
+           increase expression    increase activity      1
+============================================================
+
+
+Initial length of data: 1182
+Output length of data: 386
+deepseekV_gptE_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 7
+Length of Should data: 0
+Length of CTD data: 609
+Overall Precision: 0.018134715025906734
+Overall Recall: 0.011494252873563218
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 160
+  Invalid gene symbols (not in manual):   226
+  Rows with no gene symbol:               0
+  Total df rows:                          386
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 353
+  Invalid chemical IDs (not in manual):   33
+  Rows with no chemical ID:               0
+  Total df rows:                          386
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 117
+  Exact relationship match:                               7
+  Wrong relationship (any mismatch):                      110
+    ├─ Wrong prefix only  (correct type, wrong direction): 109
+    ├─ Wrong type only    (correct prefix, wrong type):    1
+    ├─ Wrong prefix AND type:                              0
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 293
+  Matched rows: 4
+
+SUPPLEMENT:
+  DF rows in section: 83
+  Matched rows: 2
+
+FIG:
+  DF rows in section: 0
+  Matched rows: 0
+
+TEXT:
+  DF rows in section: 10
+  Matched rows: 1
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      293              4   0.013652 0.006568
+SUPPLEMENT       83              2   0.024096 0.003284
+       FIG        0              0   0.000000 0.000000
+      TEXT       10              1   0.100000 0.001642
+------------------------------------------------------------
+
+Unmatched manual rows: 622
+Unmatched df rows: 379
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+SUPPLEMENT    81
+TABLE         28
+TEXT           1
+
+⚠️  110 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+increase expression    110
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+decrease expression         81
+affect expression           28
+increase phosphorylation     1
+
+--- Side-by-side (Manual → DF) ---
+relationship_norm_manual     relationship_norm_df  count
+     increase expression      decrease expression     81
+     increase expression        affect expression     28
+     increase expression increase phosphorylation      1
+============================================================
+
+
+Initial length of data: 913
+Output length of data: 344
+deepseekV_gpt4oE_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 48
+Length of Should data: 1
+Length of CTD data: 609
+Overall Precision: 0.13953488372093023
+Overall Recall: 0.07881773399014778
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 171
+  Invalid gene symbols (not in manual):   173
+  Rows with no gene symbol:               0
+  Total df rows:                          344
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 334
+  Invalid chemical IDs (not in manual):   10
+  Rows with no chemical ID:               0
+  Total df rows:                          344
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 137
+  Exact relationship match:                               48
+  Wrong relationship (any mismatch):                      89
+    ├─ Wrong prefix only  (correct type, wrong direction): 85
+    ├─ Wrong type only    (correct prefix, wrong type):    2
+    ├─ Wrong prefix AND type:                              2
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 224
+  Matched rows: 26
+
+SUPPLEMENT:
+  DF rows in section: 104
+  Matched rows: 21
+
+FIG:
+  DF rows in section: 0
+  Matched rows: 0
+
+TEXT:
+  DF rows in section: 16
+  Matched rows: 1
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      224             26   0.116071 0.042693
+SUPPLEMENT      104             21   0.201923 0.034483
+       FIG        0              0   0.000000 0.000000
+      TEXT       16              1   0.062500 0.001642
+------------------------------------------------------------
+
+Unmatched manual rows: 581
+Unmatched df rows: 296
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+SUPPLEMENT    82
+TEXT           7
+TABLE          1
+
+⚠️  90 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+increase expression             86
+decrease expression              3
+affect response to substance     1
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+decrease expression    81
+affect expression       5
+increase secretion      2
+increase expression     1
+affect activity         1
+
+--- Side-by-side (Manual → DF) ---
+    relationship_norm_manual relationship_norm_df  count
+         increase expression  decrease expression     81
+         increase expression    affect expression      3
+         increase expression   increase secretion      2
+affect response to substance    affect expression      1
+         decrease expression      affect activity      1
+         decrease expression    affect expression      1
+         decrease expression  increase expression      1
+============================================================
+
+
+Initial length of data: 922
+Output length of data: 138
+deepseekV_claudeE_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 10
+Length of Should data: 3
+Length of CTD data: 609
+Overall Precision: 0.07246376811594203
+Overall Recall: 0.016420361247947456
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 120
+  Invalid gene symbols (not in manual):   18
+  Rows with no gene symbol:               0
+  Total df rows:                          138
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 130
+  Invalid chemical IDs (not in manual):   8
+  Rows with no chemical ID:               0
+  Total df rows:                          138
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 102
+  Exact relationship match:                               10
+  Wrong relationship (any mismatch):                      92
+    ├─ Wrong prefix only  (correct type, wrong direction): 91
+    ├─ Wrong type only    (correct prefix, wrong type):    0
+    ├─ Wrong prefix AND type:                              1
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 35
+  Matched rows: 4
+
+SUPPLEMENT:
+  DF rows in section: 82
+  Matched rows: 1
+
+FIG:
+  DF rows in section: 0
+  Matched rows: 0
+
+TEXT:
+  DF rows in section: 21
+  Matched rows: 5
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE       35              4   0.114286 0.006568
+SUPPLEMENT       82              1   0.012195 0.001642
+       FIG        0              0   0.000000 0.000000
+      TEXT       21              5   0.238095 0.008210
+------------------------------------------------------------
+
+Unmatched manual rows: 619
+Unmatched df rows: 128
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+SUPPLEMENT    81
+TABLE         10
+TEXT           1
+
+⚠️  92 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+increase expression               91
+decrease response to substance     1
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+decrease expression    81
+affect expression      10
+increase expression     1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual relationship_norm_df  count
+           increase expression  decrease expression     81
+           increase expression    affect expression     10
+decrease response to substance  increase expression      1
+============================================================
+
+
+Initial length of data: 1714
+Output length of data: 589
+gptV_deepseekE_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 286
+Length of Should data: 3
+Length of CTD data: 609
+Overall Precision: 0.4855687606112054
+Overall Recall: 0.4696223316912972
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 400
+  Invalid gene symbols (not in manual):   189
+  Rows with no gene symbol:               0
+  Total df rows:                          589
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 572
+  Invalid chemical IDs (not in manual):   17
+  Rows with no chemical ID:               0
+  Total df rows:                          589
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 336
+  Exact relationship match:                               286
+  Wrong relationship (any mismatch):                      50
+    ├─ Wrong prefix only  (correct type, wrong direction): 34
+    ├─ Wrong type only    (correct prefix, wrong type):    6
+    ├─ Wrong prefix AND type:                              10
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 391
+  Matched rows: 145
+
+SUPPLEMENT:
+  DF rows in section: 148
+  Matched rows: 124
+
+FIG:
+  DF rows in section: 0
+  Matched rows: 0
+
+TEXT:
+  DF rows in section: 50
+  Matched rows: 17
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      391            145   0.370844 0.238095
+SUPPLEMENT      148            124   0.837838 0.203612
+       FIG        0              0   0.000000 0.000000
+      TEXT       50             17   0.340000 0.027915
+------------------------------------------------------------
+
+Unmatched manual rows: 343
+Unmatched df rows: 303
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+TABLE    16
+TEXT      2
+
+⚠️  18 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+increase expression               9
+affect response to substance      6
+decrease response to substance    2
+affect expression                 1
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+affect expression           7
+increase expression         5
+decrease expression         4
+increase localization       1
+increase phosphorylation    1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual     relationship_norm_df  count
+           increase expression        affect expression      7
+  affect response to substance      increase expression      4
+  affect response to substance      decrease expression      2
+decrease response to substance      decrease expression      2
+             affect expression      increase expression      1
+           increase expression    increase localization      1
+           increase expression increase phosphorylation      1
+============================================================
+
+
+Initial length of data: 2188
+Output length of data: 727
+gptV_claudeE_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 391
+Length of Should data: 6
+Length of CTD data: 609
+Overall Precision: 0.5378266850068776
+Overall Recall: 0.6420361247947455
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 521
+  Invalid gene symbols (not in manual):   206
+  Rows with no gene symbol:               0
+  Total df rows:                          727
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 676
+  Invalid chemical IDs (not in manual):   51
+  Rows with no chemical ID:               0
+  Total df rows:                          727
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 428
+  Exact relationship match:                               391
+  Wrong relationship (any mismatch):                      37
+    ├─ Wrong prefix only  (correct type, wrong direction): 19
+    ├─ Wrong type only    (correct prefix, wrong type):    9
+    ├─ Wrong prefix AND type:                              9
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 347
+  Matched rows: 143
+
+SUPPLEMENT:
+  DF rows in section: 125
+  Matched rows: 124
+
+FIG:
+  DF rows in section: 211
+  Matched rows: 112
+
+TEXT:
+  DF rows in section: 44
+  Matched rows: 12
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      347            143   0.412104 0.234811
+SUPPLEMENT      125            124   0.992000 0.203612
+       FIG      211            112   0.530806 0.183908
+      TEXT       44             12   0.272727 0.019704
+------------------------------------------------------------
+
+Unmatched manual rows: 238
+Unmatched df rows: 336
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+TABLE    11
+FIG      11
+TEXT      5
+
+⚠️  27 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+increase expression               7
+affect response to substance      7
+affect expression                 4
+decrease expression               3
+decrease cleavage                 3
+decrease response to substance    2
+increase phosphorylation          1
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+decrease expression              10
+increase expression               9
+decrease metabolic processing     3
+affect expression                 2
+increase secretion                1
+increase activity                 1
+decrease activity                 1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual          relationship_norm_df  count
+  affect response to substance           increase expression      4
+  affect response to substance           decrease expression      3
+             decrease cleavage decrease metabolic processing      3
+           decrease expression           increase expression      3
+           increase expression           decrease expression      3
+             affect expression           decrease expression      2
+             affect expression           increase expression      2
+decrease response to substance           decrease expression      2
+           increase expression             affect expression      2
+           increase expression             increase activity      1
+           increase expression            increase secretion      1
+      increase phosphorylation             decrease activity      1
+============================================================
+
+
+Initial length of data: 1742
+Output length of data: 538
+claudeV_deepseekE_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 318
+Length of Should data: 3
+Length of CTD data: 609
+Overall Precision: 0.5910780669144982
+Overall Recall: 0.5221674876847291
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 386
+  Invalid gene symbols (not in manual):   152
+  Rows with no gene symbol:               0
+  Total df rows:                          538
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 521
+  Invalid chemical IDs (not in manual):   17
+  Rows with no chemical ID:               0
+  Total df rows:                          538
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 339
+  Exact relationship match:                               318
+  Wrong relationship (any mismatch):                      21
+    ├─ Wrong prefix only  (correct type, wrong direction): 9
+    ├─ Wrong type only    (correct prefix, wrong type):    5
+    ├─ Wrong prefix AND type:                              7
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 366
+  Matched rows: 176
+
+SUPPLEMENT:
+  DF rows in section: 125
+  Matched rows: 124
+
+FIG:
+  DF rows in section: 0
+  Matched rows: 0
+
+TEXT:
+  DF rows in section: 47
+  Matched rows: 18
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      366            176   0.480874 0.288998
+SUPPLEMENT      125            124   0.992000 0.203612
+       FIG        0              0   0.000000 0.000000
+      TEXT       47             18   0.382979 0.029557
+------------------------------------------------------------
+
+Unmatched manual rows: 311
+Unmatched df rows: 220
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+TABLE    12
+TEXT      2
+
+⚠️  14 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+affect response to substance      6
+increase expression               5
+decrease response to substance    2
+affect expression                 1
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+increase expression         5
+decrease expression         4
+affect expression           3
+increase localization       1
+increase phosphorylation    1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual     relationship_norm_df  count
+  affect response to substance      increase expression      4
+           increase expression        affect expression      3
+  affect response to substance      decrease expression      2
+decrease response to substance      decrease expression      2
+             affect expression      increase expression      1
+           increase expression    increase localization      1
+           increase expression increase phosphorylation      1
+============================================================
+
+
+Initial length of data: 2694
+Output length of data: 918
+claudeV_gptE_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 419
+Length of Should data: 9
+Length of CTD data: 609
+Overall Precision: 0.4564270152505447
+Overall Recall: 0.6880131362889984
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 608
+  Invalid gene symbols (not in manual):   310
+  Rows with no gene symbol:               0
+  Total df rows:                          918
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 809
+  Invalid chemical IDs (not in manual):   109
+  Rows with no chemical ID:               0
+  Total df rows:                          918
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 469
+  Exact relationship match:                               419
+  Wrong relationship (any mismatch):                      50
+    ├─ Wrong prefix only  (correct type, wrong direction): 29
+    ├─ Wrong type only    (correct prefix, wrong type):    13
+    ├─ Wrong prefix AND type:                              8
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 550
+  Matched rows: 193
+
+SUPPLEMENT:
+  DF rows in section: 125
+  Matched rows: 124
+
+FIG:
+  DF rows in section: 201
+  Matched rows: 91
+
+TEXT:
+  DF rows in section: 42
+  Matched rows: 11
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      550            193   0.350909 0.316913
+SUPPLEMENT      125            124   0.992000 0.203612
+       FIG      201             91   0.452736 0.149425
+      TEXT       42             11   0.261905 0.018062
+------------------------------------------------------------
+
+Unmatched manual rows: 210
+Unmatched df rows: 499
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+FIG      22
+TABLE     9
+TEXT      1
+
+⚠️  32 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+increase expression               11
+decrease expression                6
+affect response to substance       6
+affect expression                  4
+decrease cleavage                  3
+decrease response to substance     2
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+decrease expression    18
+increase expression    13
+increase secretion      1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual relationship_norm_df  count
+           increase expression  decrease expression     10
+           decrease expression  increase expression      6
+  affect response to substance  increase expression      4
+             affect expression  increase expression      3
+             decrease cleavage  decrease expression      3
+  affect response to substance  decrease expression      2
+decrease response to substance  decrease expression      2
+             affect expression  decrease expression      1
+           increase expression   increase secretion      1
+============================================================
+
+
+Initial length of data: 2001
+Output length of data: 794
+claudeV_gpt4oE_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 336
+Length of Should data: 7
+Length of CTD data: 609
+Overall Precision: 0.42317380352644834
+Overall Recall: 0.5517241379310345
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 527
+  Invalid gene symbols (not in manual):   267
+  Rows with no gene symbol:               0
+  Total df rows:                          794
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 661
+  Invalid chemical IDs (not in manual):   133
+  Rows with no chemical ID:               0
+  Total df rows:                          794
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 363
+  Exact relationship match:                               336
+  Wrong relationship (any mismatch):                      27
+    ├─ Wrong prefix only  (correct type, wrong direction): 16
+    ├─ Wrong type only    (correct prefix, wrong type):    4
+    ├─ Wrong prefix AND type:                              7
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 514
+  Matched rows: 159
+
+SUPPLEMENT:
+  DF rows in section: 125
+  Matched rows: 124
+
+FIG:
+  DF rows in section: 124
+  Matched rows: 42
+
+TEXT:
+  DF rows in section: 31
+  Matched rows: 11
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      514            159   0.309339 0.261084
+SUPPLEMENT      125            124   0.992000 0.203612
+       FIG      124             42   0.338710 0.068966
+      TEXT       31             11   0.354839 0.018062
+------------------------------------------------------------
+
+Unmatched manual rows: 293
+Unmatched df rows: 458
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+FIG      10
+TABLE     9
+TEXT      1
+
+⚠️  20 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+affect response to substance      7
+decrease expression               4
+affect expression                 4
+increase expression               3
+decrease response to substance    2
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+increase expression    11
+decrease expression     8
+increase activity       1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual relationship_norm_df  count
+  affect response to substance  increase expression      4
+           decrease expression  increase expression      4
+             affect expression  increase expression      3
+  affect response to substance  decrease expression      3
+decrease response to substance  decrease expression      2
+           increase expression  decrease expression      2
+             affect expression  decrease expression      1
+           increase expression    increase activity      1
+============================================================
+
+
+Initial length of data: 1763
+Output length of data: 393
+gpt4oV_deepseekE_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 135
+Length of Should data: 2
+Length of CTD data: 609
+Overall Precision: 0.3435114503816794
+Overall Recall: 0.22167487684729065
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 324
+  Invalid gene symbols (not in manual):   69
+  Rows with no gene symbol:               0
+  Total df rows:                          393
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 369
+  Invalid chemical IDs (not in manual):   24
+  Rows with no chemical ID:               0
+  Total df rows:                          393
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 278
+  Exact relationship match:                               135
+  Wrong relationship (any mismatch):                      143
+    ├─ Wrong prefix only  (correct type, wrong direction): 131
+    ├─ Wrong type only    (correct prefix, wrong type):    3
+    ├─ Wrong prefix AND type:                              9
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 217
+  Matched rows: 120
+
+SUPPLEMENT:
+  DF rows in section: 125
+  Matched rows: 0
+
+FIG:
+  DF rows in section: 0
+  Matched rows: 0
+
+TEXT:
+  DF rows in section: 51
+  Matched rows: 15
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      217            120   0.552995 0.197044
+SUPPLEMENT      125              0   0.000000 0.000000
+       FIG        0              0   0.000000 0.000000
+      TEXT       51             15   0.294118 0.024631
+------------------------------------------------------------
+
+Unmatched manual rows: 494
+Unmatched df rows: 258
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+SUPPLEMENT    124
+TABLE          10
+TEXT            4
+
+⚠️  138 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+increase expression               86
+decrease expression               43
+affect response to substance       5
+decrease response to substance     1
+affect abundance                   1
+decrease acetylation               1
+affect expression                  1
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+decrease expression         82
+increase expression         50
+affect expression            3
+increase localization        1
+increase phosphorylation     1
+decrease methylation         1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual     relationship_norm_df  count
+           increase expression      decrease expression     81
+           decrease expression      increase expression     43
+  affect response to substance      increase expression      4
+           increase expression        affect expression      3
+              affect abundance      increase expression      1
+             affect expression      increase expression      1
+  affect response to substance      decrease expression      1
+          decrease acetylation     decrease methylation      1
+decrease response to substance      increase expression      1
+           increase expression    increase localization      1
+           increase expression increase phosphorylation      1
+============================================================
+
+
+Initial length of data: 2151
+Output length of data: 695
+gpt4oV_claudeE_output
+============================================================
+OVERALL MATCHING STATISTICS
+============================================================
+Total matched rows: 254
+Length of Should data: 8
+Length of CTD data: 609
+Overall Precision: 0.36546762589928056
+Overall Recall: 0.41707717569786534
+
+--- Gene Symbol Validity (df vs. manual) ---
+  Valid gene symbols   (found in manual): 507
+  Invalid gene symbols (not in manual):   188
+  Rows with no gene symbol:               0
+  Total df rows:                          695
+
+--- Chemical ID Validity (df vs. manual) ---
+  Valid chemical IDs   (found in manual): 656
+  Invalid chemical IDs (not in manual):   39
+  Rows with no chemical ID:               0
+  Total df rows:                          695
+
+--- Relationship Error Analysis on Valid Chem-Gene Pairs ---
+  DF rows with a valid (pmid, chemicalID, gene_key) pair: 417
+  Exact relationship match:                               254
+  Wrong relationship (any mismatch):                      163
+    ├─ Wrong prefix only  (correct type, wrong direction): 145
+    ├─ Wrong type only    (correct prefix, wrong type):    10
+    ├─ Wrong prefix AND type:                              8
+
+============================================================
+SECTION-SPECIFIC MATCHING
+============================================================
+
+TABLE:
+  DF rows in section: 327
+  Matched rows: 136
+
+SUPPLEMENT:
+  DF rows in section: 125
+  Matched rows: 0
+
+FIG:
+  DF rows in section: 201
+  Matched rows: 104
+
+TEXT:
+  DF rows in section: 42
+  Matched rows: 14
+
+------------------------------------------------------------
+SUMMARY TABLE:
+   section  df_rows  matched_count  precision   recall
+     TABLE      327            136   0.415902 0.223317
+SUPPLEMENT      125              0   0.000000 0.000000
+       FIG      201            104   0.517413 0.170772
+      TEXT       42             14   0.333333 0.022989
+------------------------------------------------------------
+
+Unmatched manual rows: 375
+Unmatched df rows: 441
+
+--- Section distribution of partial matches (DF side) ---
+section_consolidated
+SUPPLEMENT    124
+FIG            16
+TABLE           9
+TEXT            5
+
+⚠️  154 rows matched on pmid+geneSymbol+chemicalID but NOT on full merge keys
+
+--- Manual relationship_norm (unmatched, partial key match) ---
+relationship_norm_manual
+increase expression               93
+decrease expression               44
+affect response to substance       7
+affect expression                  4
+decrease cleavage                  3
+decrease response to substance     2
+increase phosphorylation           1
+
+--- DF relationship_norm (unmatched, partial key match) ---
+relationship_norm_df
+decrease expression              98
+increase expression              50
+decrease metabolic processing     3
+increase secretion                1
+increase activity                 1
+decrease activity                 1
+
+--- Side-by-side (Manual → DF) ---
+      relationship_norm_manual          relationship_norm_df  count
+           increase expression           decrease expression     91
+           decrease expression           increase expression     44
+  affect response to substance           increase expression      4
+  affect response to substance           decrease expression      3
+             decrease cleavage decrease metabolic processing      3
+             affect expression           decrease expression      2
+             affect expression           increase expression      2
+decrease response to substance           decrease expression      2
+           increase expression             increase activity      1
+           increase expression            increase secretion      1
+      increase phosphorylation             decrease activity      1
+============================================================

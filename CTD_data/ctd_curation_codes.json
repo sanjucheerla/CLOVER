@@ -1,0 +1,488 @@
+[
+    {
+        "name": "cotreatment",
+        "definition": "Involving the use of two or more chemicals and/or genes simultaneously.",
+        "code": "co-treated with",
+        "positive_code": "(unacceptable)",
+        "negative_code": "(unacceptable)",
+        "neutral_code": "(unacceptable)",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "binding",
+        "definition": "A molecular interaction.",
+        "code": "binds to",
+        "positive_code": "(unacceptable)",
+        "negative_code": "(unacceptable)",
+        "neutral_code": "does not bind to",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "reaction",
+        "definition": "Any general biochemical or molecular event.",
+        "code": "affects the reaction",
+        "positive_code": "promotes the reaction",
+        "negative_code": "inhibits the reaction",
+        "neutral_code": "does not affect the reaction",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "activity",
+        "definition": "An elemental function of a molecule.",
+        "code": "affects the activity of",
+        "positive_code": "results in increased activity of",
+        "negative_code": "results in decreased activity of",
+        "neutral_code": "does not affect the activity of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "localization",
+        "definition": "Part of the cell where a molecule resides.",
+        "code": "affects the localization of",
+        "positive_code": "results in increased localization of",
+        "negative_code": "results in decreased localization of",
+        "neutral_code": "does not affect the localization of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "expression",
+        "definition": "The expression of a gene product.",
+        "code": "affects the expression of",
+        "positive_code": "results in increased expression of",
+        "negative_code": "results in decreased expression of",
+        "neutral_code": "does not affect the expression of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "abundance",
+        "definition": "The abundance of a chemical (if chemical synthesis is not known).",
+        "code": "affects the abundance of",
+        "positive_code": "results in increased abundance of",
+        "negative_code": "results in decreased abundance of",
+        "neutral_code": "does not affect the abundance of",
+        "specifications": "applies to chemicals only"
+    },
+    {
+        "name": "mutagenesis",
+        "definition": "The genetic alteration of a gene product.",
+        "code": "affects the mutagenesis of",
+        "positive_code": "results in increased mutagenesis of",
+        "negative_code": "results in decreased mutagenesis of",
+        "neutral_code": "does not affect the mutagenesis of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "response to chemical",
+        "definition": "Chemical resistance or chemical sensitivity.",
+        "code": "affects the chemical susceptibility to",
+        "positive_code": "results in chemical sensitivity to",
+        "negative_code": "results in chemical resistance to",
+        "neutral_code": "does not affect the response to chemical",
+        "specifications": "applies to chemicals only"
+    },
+    {
+        "name": "stability",
+        "definition": "Overall molecular integrity.",
+        "code": "affects the stability of",
+        "positive_code": "results in increased stability of",
+        "negative_code": "results in decreased stability of",
+        "neutral_code": "does not affect the stability of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "splicing ",
+        "definition": "The removal of introns to generate mRNA.",
+        "code": "affects the splicing of",
+        "positive_code": "results in increased splicing of",
+        "negative_code": "results in decreased splicing of",
+        "neutral_code": "does not affect the splicing of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "folding",
+        "definition": "The bending and positioning of a molecule to achieve conformational integrity.",
+        "code": "affects the folding of",
+        "positive_code": "results in increased folding of",
+        "negative_code": "results in decreased folding of",
+        "neutral_code": "does not affect the folding of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "transport",
+        "definition": "The movement of a molecule into or out of a cell.",
+        "code": "affects the transport of",
+        "positive_code": "results in increased transport of",
+        "negative_code": "results in decreased transport of",
+        "neutral_code": "does not affect the transport of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "uptake",
+        "definition": "The movement of a molecule into a cell (by less specific means than import).",
+        "code": "affects the uptake of",
+        "positive_code": "results in increased uptake of",
+        "negative_code": "results in decreased uptake of",
+        "neutral_code": "does not affect the uptake of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "import",
+        "definition": "The movement of a molecule into a cell (by more specific means than uptake).",
+        "code": "affects the import of",
+        "positive_code": "results in increased import of",
+        "negative_code": "results in decreased import of",
+        "neutral_code": "does not affect the import of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "secretion",
+        "definition": "The movement of a molecule out of a cell (by less specific means than export).",
+        "code": "affects the secretion of",
+        "positive_code": "results in increased secretion of",
+        "negative_code": "results in decreased secretion of",
+        "neutral_code": "does not affect the secretion of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "export",
+        "definition": "The movement of a molecule out of a cell (by more specific means than secretion).",
+        "code": "affects the export of",
+        "positive_code": "results in increased export of",
+        "negative_code": "results in decreased export of",
+        "neutral_code": "does not affect the export of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "metabolic processing",
+        "definition": "The biochemical alteration of a molecule's structure (does not include changes in expression, stability, folding, localization, splicing, or transport).",
+        "code": "affects the metabolism of",
+        "positive_code": "results in increased metabolism of",
+        "negative_code": "results in decreased metabolism of",
+        "neutral_code": "does not affect the metabolism of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "chemical synthesis",
+        "definition": "A biochemical event resulting in a new chemical product.",
+        "code": "affects the chemical synthesis of",
+        "positive_code": "results in increased chemical synthesis of",
+        "negative_code": "results in decreased chemical synthesis of",
+        "neutral_code": "does not affect the chemical synthesis of",
+        "specifications": "applies to chemicals only"
+    },
+    {
+        "name": "degradation",
+        "definition": "Catabolism or breakdown.",
+        "code": "affects the degradation of",
+        "positive_code": "results in increased degradation of",
+        "negative_code": "results in decreased degradation of",
+        "neutral_code": "does not affect the degradation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "acetylation",
+        "definition": "The addition of an acetyl group.",
+        "code": "affects the acetylation of",
+        "positive_code": "results in increased acetylation of",
+        "negative_code": "results in decreased acetylation of",
+        "neutral_code": "does not affect the acetylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "acylation",
+        "definition": "The addition of an acyl group.",
+        "code": "affects the acylation of",
+        "positive_code": "results in increased acylation of",
+        "negative_code": "results in decreased acylation of",
+        "neutral_code": "does not affect the acylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "alkylation",
+        "definition": "The addition of an alkyl group.",
+        "code": "affects the alkylation of",
+        "positive_code": "results in increased alkylation of",
+        "negative_code": "results in decreased alkylation of",
+        "neutral_code": "does not affect the alkylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "amination",
+        "definition": "The addition of an amine group.",
+        "code": "affects the amination of",
+        "positive_code": "results in increased amination of",
+        "negative_code": "results in decreased amination of",
+        "neutral_code": "does not affect the amination of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "carbamoylation",
+        "definition": "The addition of a carbamoyl group.",
+        "code": "affects the carbamoylation of",
+        "positive_code": "results in increased carbamoylation of",
+        "negative_code": "results in decreased carbamoylation of",
+        "neutral_code": "does not affect the carbamoylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "carboxylation",
+        "definition": "The addition of a carboxyl group.",
+        "code": "affects the carboxylation of",
+        "positive_code": "results in increased carboxylation of",
+        "negative_code": "results in decreased carboxylation of",
+        "neutral_code": "does not affect the carboxylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "cleavage",
+        "definition": "The processing or splitting of a molecule, not necessarily leading to the destruction of the molecule.",
+        "code": "affects the cleavage of",
+        "positive_code": "results in increased cleavage of",
+        "negative_code": "results in decreased cleavage of",
+        "neutral_code": "does not affect the cleavage of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "ethylation",
+        "definition": "The addition of an ethyl group.",
+        "code": "affects the ethylation of",
+        "positive_code": "results in increased ethylation of",
+        "negative_code": "results in decreased ethylation of",
+        "neutral_code": "does not affect the ethylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "glycation",
+        "definition": "The non-enzymatic addition of a sugar.",
+        "code": "affects the glycation of",
+        "positive_code": "results in increased glycation of",
+        "negative_code": "results in decreased glycation of",
+        "neutral_code": "does not affect the glycation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "glycosylation",
+        "definition": "The addition of a sugar group.",
+        "code": "affects the glycosylation of",
+        "positive_code": "results in increased glycosylation of",
+        "negative_code": "results in decreased glycosylation of",
+        "neutral_code": "does not affect the glycosylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "N-linked glycosylation",
+        "definition": "The addition of a sugar group to an amide nitrogen.",
+        "code": "affects the N-linked glycosylation of",
+        "positive_code": "results in increased N-linked glycosylation of",
+        "negative_code": "results in decreased N-linked glycosylation of",
+        "neutral_code": "does not affect the N-linked glycosylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "O-linked glycosylation",
+        "definition": "The addition of a sugar group to a hydroxyl group.",
+        "code": "affects the O-linked glycosylation of",
+        "positive_code": "results in increased O-linked glycosylation of",
+        "negative_code": "results in decreased O-linked glycosylation of",
+        "neutral_code": "does not affect the O-linked glycosylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "glucuronidation",
+        "definition": "The addition of a sugar group to form a glucuronide, typically part of an inactivating or detoxifying reaction.",
+        "code": "affects the glucuronidation of",
+        "positive_code": "results in increased glucuronidation of",
+        "negative_code": "results in decreased glucuronidation of",
+        "neutral_code": "does not affect the glucuronidation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "hydrolysis",
+        "definition": "The splitting of a molecule via the specific use of water.",
+        "code": "affects the hydrolysis of",
+        "positive_code": "results in increased hydrolysis of",
+        "negative_code": "results in decreased hydrolysis of",
+        "neutral_code": "does not affect the hydrolysis of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "hydroxylation",
+        "definition": "The addition of a hydroxy group.",
+        "code": "affects the hydroxylation of",
+        "positive_code": "results in increased hydroxylation of",
+        "negative_code": "results in decreased hydroxylation of",
+        "neutral_code": "does not affect the hydroxylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "lipidation",
+        "definition": "The addition of a lipid group.",
+        "code": "affects the lipidation of",
+        "positive_code": "results in increased lipidation of",
+        "negative_code": "results in decreased lipidation of",
+        "neutral_code": "does not affect the lipidation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "geranoylation",
+        "definition": "The addition of a geranoyl group.",
+        "code": "affects the geranoylation of",
+        "positive_code": "results in increased geranoylation of",
+        "negative_code": "results in decreased geranoylation of",
+        "neutral_code": "does not affect the geranoylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "farnesylation",
+        "definition": "The addition of a farnesyl group.",
+        "code": "affects the farnesylation of",
+        "positive_code": "results in increased farnesylation of",
+        "negative_code": "results in decreased farnesylation of",
+        "neutral_code": "does not affect the farnesylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "myristoylation",
+        "definition": "The addition of a myristoyl group.",
+        "code": "affects the myristoylation of",
+        "positive_code": "results in increased myristoylation of",
+        "negative_code": "results in decreased myristoylation of",
+        "neutral_code": "does not affect the myristoylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "palmitoylation",
+        "definition": "The addition of a palmitoyl group.",
+        "code": "affects the palmitoylation of",
+        "positive_code": "results in increased palmitoylation of",
+        "negative_code": "results in decreased palmitoylation of",
+        "neutral_code": "does not affect the palmitoylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "prenylation",
+        "definition": "The addition of a prenyl group.",
+        "code": "affects the prenylation of",
+        "positive_code": "results in increased prenylation of",
+        "negative_code": "results in decreased prenylation of",
+        "neutral_code": "does not affect the prenylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "methylation",
+        "definition": "The addition of a methyl group.",
+        "code": "affects the methylation of",
+        "positive_code": "results in increased methylation of",
+        "negative_code": "results in decreased methylation of",
+        "neutral_code": "does not affect the methylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "nitrosation",
+        "definition": "The addition of a nitroso group.",
+        "code": "affects the nitrosation of",
+        "positive_code": "results in increased nitrosation of",
+        "negative_code": "results in decreased nitrosation of",
+        "neutral_code": "does not affect the nitrosation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "nucleotidylation",
+        "definition": "The addition of a nucleotidyl group.",
+        "code": "affects the nucleotidylation of",
+        "positive_code": "results in increased nucleotidylation of",
+        "negative_code": "results in decreased nucleotidylation of",
+        "neutral_code": "does not affect the nucleotidylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "oxidation",
+        "definition": "The loss of electrons.",
+        "code": "affects the oxidation of",
+        "positive_code": "results in increased oxidation of",
+        "negative_code": "results in decreased oxidation of",
+        "neutral_code": "does not affect the oxidation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "phosphorylation",
+        "definition": "The addition of a phosphate group.",
+        "code": "affects the phosphorylation of",
+        "positive_code": "results in increased phosphorylation of",
+        "negative_code": "results in decreased phosphorylation of",
+        "neutral_code": "does not affect the phosphorylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "sulfation",
+        "definition": "The addition of a sulfate group.",
+        "code": "affects the sulfation of",
+        "positive_code": "results in increased sulfation of",
+        "negative_code": "results in decreased sulfation of",
+        "neutral_code": "does not affect the sulfation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "reduction",
+        "definition": "The gain of electrons.",
+        "code": "affects the reduction of",
+        "positive_code": "results in increased reduction of",
+        "negative_code": "results in decreased reduction of",
+        "neutral_code": "does not affect the reduction of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "ribosylation",
+        "definition": "The addition of a ribosyl group.",
+        "code": "affects the ribosylation of",
+        "positive_code": "results in increased ribosylation of",
+        "negative_code": "results in decreased ribosylation of",
+        "neutral_code": "does not affect the ribosylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "ADP-ribosylation",
+        "definition": "The addition of a ADP-ribosyl group.",
+        "code": "affects the ADP-ribosylation of",
+        "positive_code": "results in increased ADP-ribosylation of",
+        "negative_code": "results in decreased ADP-ribosylation of",
+        "neutral_code": "does not affect the ADP-ribosylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "ubiquitination",
+        "definition": "The addition of an ubiquitin group.",
+        "code": "affects the ubiquitination of",
+        "positive_code": "results in increased ubiquitination of",
+        "negative_code": "results in decreased ubiquitination of",
+        "neutral_code": "does not affect the ubiquitination of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "sumoylation ",
+        "definition": "The addition of a SUMO group.",
+        "code": "affects the sumoylation of",
+        "positive_code": "results in increased sumoylation of",
+        "negative_code": "results in decreased sumoylation of",
+        "neutral_code": "does not affect the sumoylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "glutathionylation",
+        "definition": "The addition of a glutathione group.",
+        "code": "affects the glutathionylation of",
+        "positive_code": "results in increased glutathionylation of",
+        "negative_code": "results in decreased glutathionylation of",
+        "neutral_code": "does not affect the glutathionylation of",
+        "specifications": "applies to genes and chemicals"
+    },
+    {
+        "name": "polymerization",
+        "definition": "The addition of extra monomers to form a polymer.",
+        "code": "affects the polymerization of",
+        "positive_code": "results in increased polymerization of",
+        "negative_code": "results in decreased polymerization of",
+        "neutral_code": "does not affect the polymerization of",
+        "specifications": "applies to genes and chemicals"
+    }
+]
