@@ -1,4 +1,4 @@
-# CLOVER: A Benchmark for Full-Text CTD-Aligned Chemical–Gene Interaction Extraction using Large Language Models
+# CLOVER: Chemical-gene LLM benchmark for Obtaining Valid Entity Relationships for the Comparative Toxicogenomics Database (CTD)
 
 CLOVER is a systematic benchmarking framework for evaluating large language models (LLMs) on **full-text chemical–gene interaction extraction** using the full CTD (Comparative Toxicogenomics Database) interaction schema.
 
