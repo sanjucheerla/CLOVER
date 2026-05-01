@@ -67,5 +67,4 @@ If you use CLOVER in your work, please cite: TBD, submitted to Journal of Bioinf
 ---
 
 ## License
-
-This project is licensed under the MIT License. CTD data is subject to the [CTD data use policy](https://ctdbase.org/about/dataUsePolicy.jsp).
+All rights reserved. No permission is granted to use, copy, modify, or distribute this software without explicit permission.
