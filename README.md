@@ -37,7 +37,7 @@ Update the path constants to point to your local data directories before running
 
 ## Citation
 
-If you use CLOVER in your work, please cite: TBD, submitted to PlosONE
+If you use CLOVER in your work, please cite: TBD, submitted to PLOS One
 
 ---
 
